@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 
 from mailinglist.models import MailingList, Subscriber, Message
 
+
 class SubscriberForm(forms.ModelForm):
     mailing_list = forms.ModelChoiceField(
         widget=forms.HiddenInput,
